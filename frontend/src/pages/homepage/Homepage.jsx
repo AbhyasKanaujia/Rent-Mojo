@@ -1,5 +1,9 @@
+import {Filter} from "../../components";
+
 const HomePage = () => {
-  return <main>this is homepage</main>;
+  return <main>
+    <Filter />
+  </main>;
 };
 
 export { HomePage };

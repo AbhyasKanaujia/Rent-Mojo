@@ -1,6 +1,6 @@
 import { Header, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages";
+import { HomePage, LoginPage, SignupPage } from "./pages";
 
 function App() {
   return (
@@ -8,7 +8,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="" element={<HomePage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="signup" element={<SignupPage />} />
       </Routes>
+      {/* <Footer/> */}
     </>
   );
 }
