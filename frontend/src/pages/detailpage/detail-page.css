@@ -1,0 +1,30 @@
+.detail-div {
+  display: flex;
+  padding: 2rem;
+  min-height: calc(79vh);
+}
+.detail-img {
+  width: 25rem;
+  height: 25rem;
+}
+.detail-title {
+  font-size: 2rem;
+  /* padding-left: 1rem; */
+}
+.image-div{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.detail-text-div{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.detail-text{
+    /* padding: 1rem; */
+    font-size: 1.2rem;
+}

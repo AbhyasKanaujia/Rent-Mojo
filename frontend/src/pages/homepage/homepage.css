@@ -1,0 +1,13 @@
+.main-grid{
+    display: grid;
+    grid-template-columns: 13rem auto;
+}
+.main-filter{
+    grid-column: 1/2;
+}
+.main-area{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+}

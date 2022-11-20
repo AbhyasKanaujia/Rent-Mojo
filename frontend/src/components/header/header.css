@@ -1,0 +1,40 @@
+@import "/src/style.css";
+.navbar{
+    width: 100vw;
+}
+.nav-list{
+    order: 100;
+    align-items: center;
+}
+.mobile-cta{
+    display: none;
+}
+.desktop-cta{
+    display: block;
+}
+.nav-search-text{
+    padding: 0 0.5rem;
+}
+@media (max-width:500px) {
+    .nav-container{
+        flex-wrap: wrap;
+    }
+    .nav-search-container{
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar{
+        height: auto
+    }
+    .nav-list{
+        margin-left: auto;
+        order: 0;
+    }
+    .desktop-cta{
+        display: none;
+    }
+    .mobile-cta{
+        display: block;
+    }
+}
