@@ -1,6 +1,6 @@
 # Rent-Mojo Web Application SE MCA Mini Project
 
-This repo demonstrates only the front-end part [react](https://reactjs.org/) library in JS. You can find the backend-repo [here](https://github.com/vishalg8454/hostel-mate-backend)
+This repo demonstrates only the front-end part using [react](https://reactjs.org/) library in JS. You can find the backend-repo [here](https://github.com/vishalg8454/hostel-mate-backend)
 
 ## Why use it?
 
