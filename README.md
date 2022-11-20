@@ -39,6 +39,7 @@ npm run server
 # Run frontend only
 npm run client
 ```
+![photo_2022-11-20_11-39-42.jpg](https://raw.githubusercontent.com/AbhyasKanaujia/Rent-Mojo/master/photo_2022-11-20_11-39-42.jpg)
 
 Issues
 ==========
