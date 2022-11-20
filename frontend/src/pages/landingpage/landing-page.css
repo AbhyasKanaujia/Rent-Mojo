@@ -1,0 +1,45 @@
+.landing-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* min-height: calc(100vh - 4rem); */
+}
+.card {
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+}
+.card-imagee {
+  width: 12rem;
+  height: 12rem;
+}
+.card-header {
+  max-width: 12rem;
+  padding: 4px;
+}
+.carousel {
+  padding: 1rem;
+}
+.carousel-header {
+  color: #5a5a5a;
+  font-size: 1.5rem;
+}
+.carousel-flex {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+  width: 100vw;
+  overflow: auto;
+  /* justify-content: center; */
+}
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  cursor: pointer;
+  /* border: 2px solid var(--color-primary); */
+}
+.show-more-img{
+    width: 4rem;
+    height: 4rem;
+}

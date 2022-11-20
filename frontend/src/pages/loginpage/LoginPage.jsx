@@ -1,10 +1,25 @@
 import { useState } from "react";
 import "./login-page.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
-function loginHandler({ event, email, password }) {
+async function loginHandler({ event, email, password }) {
   event.preventDefault();
-//   loginUser({ email, password });
+  try {
+    console.log("here");
+    const res = await axios.post(
+      "https://hostel-mate-backend.onrender.com/signin",
+      {
+        username: email,
+        password: password,
+      }
+    );
+    const token = res.data.token;
+    localStorage.setItem("token",token);
+    console.log(token);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 const LoginPage = () => {

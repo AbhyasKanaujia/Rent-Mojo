@@ -1,0 +1,29 @@
+.product-card-container{
+    margin: 1rem;
+    width: 22rem;
+    /* opacity: 0.5; */
+}
+.product-card-img{
+    width: 20rem;
+    height: 20rem;
+}
+.card-price{
+    font-weight: bold;
+    font-size: large;
+    padding-right: 0.5rem;
+}
+.card-price-container{
+    display: flex;
+}
+.card-price-striked{
+    font-weight: lighter;
+    font-size: smaller;
+    text-decoration: line-through;
+}
+.ratingContainer{
+    margin-right: auto;
+    align-self: center;
+}
+.card-btn-icon:hover{
+    cursor: pointer;
+}

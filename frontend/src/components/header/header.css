@@ -1,5 +1,7 @@
 @import "/src/style.css";
-
+.navbar{
+    width: 100vw;
+}
 .nav-list{
     order: 100;
     align-items: center;

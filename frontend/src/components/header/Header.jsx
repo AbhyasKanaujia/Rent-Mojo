@@ -13,7 +13,8 @@ const Header = () => {
     <nav className="navbar">
       <div className="nav-container">
         <Link className="nav-logo" to="/">
-          RENTMOJO
+          {/* FLAT MATE */}
+          RENT MOJO
         </Link>
         <ul className="nav-list">
           <li className="nav-list-items desktop-cta">
