@@ -6,6 +6,8 @@ This repo demonstrates only the front-end part using [react](https://reactjs.org
 
 Its useful for buy/sell/rent household items.
 
+:star: Star us on GitHub — it motivates us a lot!
+
 ## Features
 
 * Buy
