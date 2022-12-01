@@ -25,6 +25,7 @@ const ProductCard = ({
 }) => {
   const [favoriteLoading, setFavoriteLoading] = useState(false);
   const [cartLoading, setCartLoading] = useState(false);
+  const [num,setNum] = useState("Contact Seller");
   //   const { encodedToken } = useUser();
   //   const { showToast } = useToast();
   //   const { wishlistList, setWishlistList } = useWishlist();
@@ -144,10 +145,10 @@ const ProductCard = ({
         ) : (
           <button
             className="card-btn card-btn-primary"
-            onClick={()=>navigate("/chat")}
+            onClick={() => {setNum("98543 65486")}}
             disabled={cartLoading}
           >
-            Contact Seller
+            {num}
           </button>
         )}
         {/* <button className="card-btn card-btn-secondary">Save For Later</button> */}
