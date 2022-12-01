@@ -5,20 +5,6 @@ const Filter = ({ state, dispatch }) => {
     <aside className="filter">
       <p className="filter-label">Filters</p>
 
-      {/* <ul className="category-list">
-        <li className="category-list-item">
-          <input
-            id="includeOutOfStock"
-            type="checkbox"
-            name="category"
-            checked={state.includeOutOfStock}
-            onChange={() => dispatch({ type: "INCLUDE_OUT_OF_STOCK" })}
-          />
-          <label htmlFor="includeOutOfStock"> Include out of stock</label>
-          <br />
-        </li>
-      </ul> */}
-
       <p className="filter-label">Category</p>
       <ul className="category-list">
         <li className="category-list-item">
@@ -65,28 +51,6 @@ const Filter = ({ state, dispatch }) => {
           <label htmlFor="selfHelp"> Vehicle</label>
           <br />
         </li>
-        {/* <li className="category-list-item">
-          <input
-            id="biography"
-            type="checkbox"
-            name="category"
-            checked={state.biography}
-            onChange={() => dispatch({ type: "SELECT_BIOGRAPHY" })}
-          />
-          <label htmlFor="biography"> Biography</label>
-          <br />
-        </li> */}
-        {/* <li className="category-list-item">
-          <input
-            id="comic"
-            type="checkbox"
-            name="category"
-            checked={state.comic}
-            onChange={() => dispatch({ type: "SELECT_COMIC" })}
-          />
-          <label htmlFor="comic"> Comic</label>
-          <br />
-        </li> */}
       </ul>
       <p className="filter-label">Rating</p>
       <ul className="category-list">

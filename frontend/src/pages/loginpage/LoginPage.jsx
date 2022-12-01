@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./login-page.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 async function loginHandler({ event, email, password }) {
   event.preventDefault();
@@ -15,7 +16,7 @@ async function loginHandler({ event, email, password }) {
       }
     );
     const token = res.data.token;
-    localStorage.setItem("token",token);
+    localStorage.setItem("token", token);
     console.log(token);
   } catch (error) {
     console.log(error);
@@ -25,6 +26,7 @@ async function loginHandler({ event, email, password }) {
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function setGuestCredential(event) {
     event.preventDefault();
@@ -70,7 +72,10 @@ const LoginPage = () => {
           className="btn btn-primary-solid btn-login"
           type="submit"
           value="Login"
-          onClick={(event) => loginHandler({ event, email, password })}
+          onClick={(event) => {
+            loginHandler({ event, email, password });
+            navigate("/");
+          }}
         />
         <button
           className="btn btn-secondary-solid btn-login"
