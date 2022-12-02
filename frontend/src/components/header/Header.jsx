@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
@@ -7,8 +7,9 @@ const wishlistList = [];
 const cartList = [];
 const handleChange = () => {};
 
-const Header = () => {
+const Header = ({loggedIn}) => {
   const [text, setText] = useState("'");
+
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -18,10 +19,10 @@ const Header = () => {
         </Link>
         <ul className="nav-list">
           <li className="nav-list-items desktop-cta">
-            {encodedToken ? (
-              <Link to="/login">
+            {loggedIn ? (
+              <Link to="/form">
                 <button className="btn btn-primary-outline  nav-cta">
-                  <i class="fas fa-user"></i>
+                  <i className="fas fa-edit"></i>
                 </button>
               </Link>
             ) : (

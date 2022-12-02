@@ -1,16 +1,17 @@
 import "./rent-page.css";
 import { ProductCard } from "../../components";
-import { rentRooms } from "../../db";
 import { useEffect } from "react";
 import axios from "axios";
 
-const db = [];
-
 const url = "https://hostel-mate-backend.onrender.com/api/product";
 const token = localStorage.getItem("token");
-const RentPage = () => {
+const RentPage = ({rentIt}) => {
+
+  useEffect(()=>{
+    console.log(rentIt);
+  },[rentIt]);
+
   useEffect(() => {
-    console.log("hey");
     (async () => {
       try {
         const res = await axios.get(url, {
@@ -23,8 +24,8 @@ const RentPage = () => {
   }, []);
   return (
     <main className="rent-main">
-      {rentRooms.map((it) => (
-        <ProductCard {...it} />
+      {rentIt.map((it,index) => (
+        <ProductCard key={index} {...it} />
       ))}
     </main>
   );

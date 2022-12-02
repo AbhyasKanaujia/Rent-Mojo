@@ -3,6 +3,7 @@ import "./login-page.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 async function loginHandler({ event, email, password }) {
   event.preventDefault();
@@ -23,7 +24,9 @@ async function loginHandler({ event, email, password }) {
   }
 }
 
-const LoginPage = () => {
+const LoginPage = ({ loggedIn, setLoggedIn }) => {
+  console.log(loggedIn);
+  console.log(setLoggedIn);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -73,8 +76,15 @@ const LoginPage = () => {
           type="submit"
           value="Login"
           onClick={(event) => {
-            loginHandler({ event, email, password });
-            navigate("/");
+            event.preventDefault();
+            // loginHandler({ event, email, password });
+            if (email === "testuser@example.com" && password === "strongPass") {              
+              navigate("/");
+              // toast.success("Login Successfull");
+              setLoggedIn((prev) => !prev);
+            } else {
+              toast.error("Wrong credentials");
+            }
           }}
         />
         <button
